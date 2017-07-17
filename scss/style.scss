@@ -1,0 +1,58 @@
+@import 'libreria/_eric-meyer-reset.min.scss';
+@import 'libreria/_animate.scss';
+@import '../fonts/icomoon/style.css';
+@import 'componentes/_variables.scss';
+@import 'componentes/_mixin.scss';
+@import 'componentes/_menus.scss';
+@import 'componentes/_zonas.scss';
+
+
+
+
+html {
+    font-family: 'PT Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.contenedor {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+}
+.exterior{
+    max-width: 1060px;
+}
+
+.imagen-principal-small{
+    background-image: url('../img/imagen-principal-small.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 190px;
+    margin-top: -100px;
+    background-size: contain;
+    @media only screen and (min-width : $bp){
+        display: none;
+    }
+}
+
+
+
+.footer{
+    background-color: $color1;
+}

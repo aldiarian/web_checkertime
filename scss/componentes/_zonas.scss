@@ -1,0 +1,237 @@
+.zona_uno {
+    height: 380px;
+    background: linear-gradient(to bottom, rgba(116, 174, 213, 1) 0%, rgba(116, 174, 213, 1) 1%, rgba(35, 86, 140, 1) 100%);
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+    .imagen-principal-big {
+        display: none;
+        @media only screen and (min-width: $bp) {
+            display: block;
+            align-self: center;
+        }
+    }
+    .caja-texto-principal {
+        width: 85%;
+        max-width: 350px;
+        margin: 0 auto;
+        padding-top: 20px;
+        @media only screen and (min-width: $bp) {
+            align-self: center;
+            margin: 0;
+            width: 100%;
+            max-width: 462px;
+            margin-top: -60px;
+            margin-left: 1em;
+        }
+    }
+    .logo-texto-checker {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 8px;
+    }
+    .texto-checker {
+        text-align: center;
+        color: white;
+        font-size: $tamafont3;
+        margin: 10px 0 30px 0;
+        @media only screen and (min-width: $bp) {
+            text-align: left;
+            font-size: 25px;
+        }
+    }
+    ul {
+        padding-left: 15px;
+        color: white;
+        position: relative;
+        li {
+            margin-bottom: .5em;
+            margin-left: 10px;
+            @include fuente($tamafont2);
+            &:before {
+                content: "\e91f";
+                /* FontAwesome Unicode */
+                font-family: icomoon;
+                position: absolute;
+                color: white;
+                left: 0;
+            }
+            @media only screen and (min-width: $bp) {
+                font-size: 18px;
+            }
+        }
+    }
+    @media only screen and (min-width: $bp) {
+        .imagen-principal {
+            background-image: url('../img/imagen-principal-small.png');
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.titular {
+    text-align: center;
+    margin-bottom: 1.5em;
+    letter-spacing: 1.2px;
+    font-size: 1.2em;
+    font-weight: bold;
+    flex: 1 100%;
+}
+
+.zona_dos,
+.zona_tres{
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+        flex-flow: row wrap;
+        padding: 2em 0;
+    }
+    .caja {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        @media only screen and (min-width: $bp) {
+            width: 50%;
+            padding: 0 2em;
+        }
+        p,
+        li {
+            margin-bottom: 1em;
+            @include fuente($tamafont2);
+        }
+        li {
+            text-align: left;
+            position: relative;
+            padding-left: 25px;
+            &:before {
+                content: "\e91f";
+                font-family: icomoon;
+                position: absolute;
+                color: black;
+                left: 0px;
+            }
+        }
+        img {
+            display: none;
+            @media only screen and (min-width: $bp) {
+                display: block;
+                margin: 0 auto;
+                height: 130px;
+            }
+        }
+        @media only screen and (min-width: $bp) {
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+.zona_tres{
+    background-color: #c5e0f3;
+    @media only screen and (min-width : $bp){
+        .caja{
+            width: 100%;
+        }
+        ul{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content:space-between;
+            li{
+                width: 45%;
+            }
+        }        
+    }
+}
+.zona_cuatro{
+    .contenedor{
+        padding: 2em 0;
+    }
+    ol{
+        counter-reset: li;
+        width: 90%;
+        margin: 0 auto;
+        max-width: 400px;
+        @media only screen and (min-width : $bp){
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content:space-between;
+            max-width: 100%;
+        }
+    }
+    li{
+        display: flex;
+        justify-content:space-between;
+        @include fuente($tamafont2);
+        margin-bottom: 2em;
+        &:before{
+            content: counter(li);
+            counter-increment: li;
+            font-size: 50px;
+            margin-right: 8px;
+            color: $color1;
+            font-family: 'Dosis';
+            font-weight: 700;
+            margin-right: 10px;
+            line-height: 42px;
+            
+        }
+        span{
+            width: 50%;
+        }
+        img{
+            height: 130px;
+            @media only screen and (min-width : $bp){
+                height: auto;                
+            }
+        }
+        @media only screen and (min-width : $bp){
+            width: 40%;            
+        }
+    }
+    @media only screen and (min-width : $bp){
+        .caja{
+            padding: 0 2em;
+        }
+    }
+}
+.zona_cinco{
+    background-color: #c5e0f3;
+    padding: 2em 0;
+    .caja{
+        text-align: center;
+        margin: 0 auto;
+        .texto{
+            margin: 0 auto;
+            margin-bottom: 2em;
+            @media only screen and (min-width : $bp){
+                width: 70%;
+            }
+            p{
+                @include fuente($tamafont2);
+                margin-bottom: 1em;
+                padding: 0 1em;
+            }
+            span{
+                margin-bottom: 1em;
+            }
+        }
+        .imagen{
+            background: url('../../img/pantalla_01.png') no-repeat center center;
+            background-size: contain;
+            width: 100%;
+            height: 160px;
+            padding: 0 1em;
+            @media only screen and (min-width : $bp){
+                background: url('../../img/pantalla-admin-eventos.jpg') no-repeat center center;
+                height: 560px;
+                background-size: contain;
+            }
+        }
+    }
+}
