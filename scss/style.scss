@@ -15,6 +15,7 @@ html {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 
@@ -33,7 +34,7 @@ a {
 .contenedor {
     margin: 0 auto;
     position: relative;
-    max-width: 1200px;
+    max-width: 1100px;
 }
 .exterior{
     max-width: 1060px;
@@ -55,4 +56,43 @@ a {
 
 .footer{
     background-color: $color1;
+    .caja{
+        display: flex;
+        color: white;
+        font-size: 14px;
+        font-size: italic;
+        text-align: center;
+        letter-spacing: .5px;
+        padding: 2em 4em;
+        justify-content:space-between;
+        opacity: 0.7;
+        flex-flow: column;
+        max-width: 300px;
+        margin: 0 auto;
+        @media only screen and (min-width : $bp){
+            flex-flow: row wrap;
+            max-width: 100%;
+            text-align: left;
+        }
+    }
+    ul{
+        margin: 1em;
+    }
+    li{
+        margin-bottom: 5px;
+        a:hover{
+            border-bottom: 1px solid white;
+        }
+    }
+    .lista{
+        font-weight: bold;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+    img{
+        width: 120px;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
 }

@@ -2887,7 +2887,8 @@ html {
   font-family: 'PT Sans', sans-serif; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 .fl {
   float: left; }
@@ -2901,7 +2902,7 @@ a {
 .contenedor {
   margin: 0 auto;
   position: relative;
-  max-width: 1200px; }
+  max-width: 1100px; }
 
 .exterior {
   max-width: 1060px; }
@@ -2919,3 +2920,43 @@ a {
 
 .footer {
   background-color: #155e8c; }
+  .footer .caja {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    font-size: 14px;
+    font-size: italic;
+    text-align: center;
+    letter-spacing: .5px;
+    padding: 2em 4em;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    opacity: 0.7;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    max-width: 300px;
+    margin: 0 auto; }
+    @media only screen and (min-width: 800px) {
+      .footer .caja {
+        -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        max-width: 100%;
+        text-align: left; } }
+  .footer ul {
+    margin: 1em; }
+  .footer li {
+    margin-bottom: 5px; }
+    .footer li a:hover {
+      border-bottom: 1px solid white; }
+  .footer .lista {
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 5px; }
+  .footer img {
+    width: 120px; }
+    .footer img:hover {
+      opacity: 0.7; }
