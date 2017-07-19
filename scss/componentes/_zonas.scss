@@ -1,5 +1,6 @@
 .zona_uno {
-    height: 380px;
+    height: 460px;
+    @media only screen and (min-width : $bp){height: 380px;}
     background: linear-gradient(to bottom, rgba(116, 174, 213, 1) 0%, rgba(116, 174, 213, 1) 1%, rgba(35, 86, 140, 1) 100%);
     .contenedor {
         display: flex;
@@ -42,7 +43,7 @@
             font-size: 25px;
         }
     }
-    ul {
+    .lista-principal {
         padding-left: 15px;
         color: white;
         position: relative;
@@ -63,6 +64,7 @@
             }
         }
     }
+
     @media only screen and (min-width: $bp) {
         .imagen-principal {
             background-image: url('../img/imagen-principal-small.png');

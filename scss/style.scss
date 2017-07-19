@@ -51,7 +51,69 @@ a {
         display: none;
     }
 }
+ .callto{
+    ul{
+        margin: 1em 0;
+    }
+    li{
+        border-radius: 4px;
+        border:2px solid white;
+        float: left;
+        letter-spacing: 1.5px;
+        text-align: center;
+        transition: ease all .3s;
+        position: relative;
+        font-size: 15px;
+         &:hover{
+            background-color: white;
+            color: black;
+            border:2px solid black;
+        }
+    }
+    .contratar{
+        margin-right: 1em;
+        padding: 10px 5%;
+        background-color: #ffd858;
+        width: 60%;
+        @media only screen and (min-width : $bp){
+            padding: 10px 40px;
+        }
+    }
+    .precios{
+        width: 30%;
+        padding: 10px 3%;
+        background-color: #b9c4e5;
+    }
+}
+.zona_callto {
+    width: 100%;
+    display: inline-block;
+    padding-top: 3em ;
+    .callto {
+        ul{
+            width: 90%;
+            margin:1em auto;
+        }
+        li{
+            width: 100%;
+            font-size: 20px;
+            margin-bottom: 1em;
+        }
+        @media only screen and (min-width : $bp){
+            
+            ul{
+                width: 420px;
+                margin:0 auto;
+            }
+            li{
+                width: auto;
+                float: left;
+            }
+        }
+    }
+        
 
+}
 
 
 .footer{

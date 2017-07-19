@@ -2635,8 +2635,11 @@ input[type="text"] {
       display: none; } }
 
 .zona_uno {
-  height: 380px;
+  height: 460px;
   background: linear-gradient(to bottom, #74aed5 0%, #74aed5 1%, #23568c 100%); }
+  @media only screen and (min-width: 800px) {
+    .zona_uno {
+      height: 380px; } }
   .zona_uno .contenedor {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2683,16 +2686,16 @@ input[type="text"] {
       .zona_uno .texto-checker {
         text-align: left;
         font-size: 25px; } }
-  .zona_uno ul {
+  .zona_uno .lista-principal {
     padding-left: 15px;
     color: white;
     position: relative; }
-    .zona_uno ul li {
+    .zona_uno .lista-principal li {
       margin-bottom: .5em;
       margin-left: 10px;
       font-size: 19px;
       line-height: 24px; }
-      .zona_uno ul li:before {
+      .zona_uno .lista-principal li:before {
         content: "\e91f";
         /* FontAwesome Unicode */
         font-family: icomoon;
@@ -2700,7 +2703,7 @@ input[type="text"] {
         color: white;
         left: 0; }
       @media only screen and (min-width: 800px) {
-        .zona_uno ul li {
+        .zona_uno .lista-principal li {
           font-size: 18px; } }
   @media only screen and (min-width: 800px) {
     .zona_uno .imagen-principal {
@@ -2917,6 +2920,56 @@ a {
   @media only screen and (min-width: 800px) {
     .imagen-principal-small {
       display: none; } }
+
+.callto ul {
+  margin: 1em 0; }
+
+.callto li {
+  border-radius: 4px;
+  border: 2px solid white;
+  float: left;
+  letter-spacing: 1.5px;
+  text-align: center;
+  transition: ease all .3s;
+  position: relative;
+  font-size: 15px; }
+  .callto li:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black; }
+
+.callto .contratar {
+  margin-right: 1em;
+  padding: 10px 5%;
+  background-color: #ffd858;
+  width: 60%; }
+  @media only screen and (min-width: 800px) {
+    .callto .contratar {
+      padding: 10px 40px; } }
+
+.callto .precios {
+  width: 30%;
+  padding: 10px 3%;
+  background-color: #b9c4e5; }
+
+.zona_callto {
+  width: 100%;
+  display: inline-block;
+  padding-top: 3em; }
+  .zona_callto .callto ul {
+    width: 90%;
+    margin: 1em auto; }
+  .zona_callto .callto li {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 1em; }
+  @media only screen and (min-width: 800px) {
+    .zona_callto .callto ul {
+      width: 420px;
+      margin: 0 auto; }
+    .zona_callto .callto li {
+      width: auto;
+      float: left; } }
 
 .footer {
   background-color: #155e8c; }
