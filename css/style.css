@@ -2710,16 +2710,6 @@ input[type="text"] {
       background-image: url("../img/imagen-principal-small.png");
       background-repeat: no-repeat; } }
 
-.titular {
-  text-align: center;
-  margin-bottom: 1.5em;
-  letter-spacing: 1.2px;
-  font-size: 1.2em;
-  font-weight: bold;
-  -webkit-flex: 1 100%;
-      -ms-flex: 1 100%;
-          flex: 1 100%; }
-
 .zona_dos .contenedor,
 .zona_tres .contenedor {
   display: -webkit-flex;
@@ -2886,6 +2876,36 @@ input[type="text"] {
           height: 560px;
           background-size: contain; } }
 
+.zona_slider {
+  height: 300px; }
+  .zona_slider .caja_slider {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10%; }
+  .zona_slider .rangeslider {
+    height: 20px;
+    border: 2px solid #cd880c;
+    border-radius: 50px;
+    position: relative; }
+  .zona_slider .rangeslider__fill {
+    background-color: #edd2ac;
+    border-radius: 50px;
+    height: 16px; }
+  .zona_slider .rangeslider__handle {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: #cd880c;
+    top: -9px;
+    border-radius: 50px; }
+    .zona_slider .rangeslider__handle .rangeslider__num {
+      position: relative;
+      top: -15px;
+      font-size: 13px;
+      font-weight: bolder;
+      color: #cd880c;
+      text-align: center; }
+
 html {
   font-family: 'PT Sans', sans-serif; }
 
@@ -2921,12 +2941,21 @@ a {
     .imagen-principal-small {
       display: none; } }
 
+.titular {
+  text-align: center;
+  margin-bottom: 1.5em;
+  letter-spacing: 1.2px;
+  font-size: 1.2em;
+  font-weight: bold;
+  -webkit-flex: 1 100%;
+      -ms-flex: 1 100%;
+          flex: 1 100%; }
+
 .callto ul {
   margin: 1em 0; }
 
 .callto li {
   border-radius: 4px;
-  border: 2px solid white;
   float: left;
   letter-spacing: 1.5px;
   text-align: center;
@@ -2939,17 +2968,19 @@ a {
     border: 2px solid black; }
 
 .callto .contratar {
+  border: 2px solid #ffd858;
   margin-right: 1em;
-  padding: 10px 5%;
+  padding: 15px 5%;
   background-color: #ffd858;
   width: 60%; }
   @media only screen and (min-width: 800px) {
     .callto .contratar {
-      padding: 10px 40px; } }
+      padding: 15px 40px; } }
 
 .callto .precios {
+  border: 2px solid #b9c4e5;
   width: 30%;
-  padding: 10px 3%;
+  padding: 15px 3%;
   background-color: #b9c4e5; }
 
 .zona_callto {
@@ -2961,11 +2992,11 @@ a {
     margin: 1em auto; }
   .zona_callto .callto li {
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 1em; }
   @media only screen and (min-width: 800px) {
     .zona_callto .callto ul {
-      width: 420px;
+      width: 340px;
       margin: 0 auto; }
     .zona_callto .callto li {
       width: auto;

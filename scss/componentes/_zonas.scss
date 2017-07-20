@@ -1,3 +1,4 @@
+
 .zona_uno {
     height: 460px;
     @media only screen and (min-width : $bp){height: 380px;}
@@ -73,14 +74,6 @@
     }
 }
 
-.titular {
-    text-align: center;
-    margin-bottom: 1.5em;
-    letter-spacing: 1.2px;
-    font-size: 1.2em;
-    font-weight: bold;
-    flex: 1 100%;
-}
 
 .zona_dos,
 .zona_tres{
@@ -234,6 +227,45 @@
                 height: 560px;
                 background-size: contain;
             }
+        }
+    }
+}
+
+$altura: 20px;
+$color: #cd880c;
+
+.zona_slider{
+    height: 300px;
+    .caja_slider{
+        width: 50%;
+        margin:0 auto;
+        margin-top: 10%;
+    }
+    .rangeslider{
+        height: $altura;
+        border: 2px solid $color;
+        border-radius: 50px;
+        position: relative;
+    }
+    .rangeslider__fill{
+        background-color: #edd2ac;
+        border-radius: 50px;
+        height: $altura - 4px;
+    }
+    .rangeslider__handle{
+        position: absolute;
+        width: $altura + 15px;
+        height: $altura + 15px;
+        background: $color;
+        top: -9px;
+        border-radius: 50px;
+        .rangeslider__num{
+            position: relative;
+            top: -15px;
+            font-size: 13px;
+            font-weight: bolder;
+            color: $color;
+            text-align: center;
         }
     }
 }
