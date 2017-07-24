@@ -1,0 +1,173 @@
+$altura: 20px;
+$color: #cd880c;
+
+.zona_texto{
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    margin:1em 10px;
+    h2{
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+    }
+    @media only screen and (min-width : $bp){
+        margin:5em 0;
+        h2{
+            font-size: 60px;
+        }
+        p{
+            font-size: 30px;
+        }
+    }
+}
+
+.zona_slider {
+    background-color: #f5f8fc;
+    font-family: $fuente2;
+    padding:1em 0 3em;
+    @media only screen and (min-width : $bp){
+        padding:4em 0;
+        
+    }
+    .selec_tra {
+        width: 200px;
+        margin: 0 auto 3em;
+        input {
+            width: 52px;
+            height: 30px;
+            border: 2px solid $color;
+            float: left;
+            text-align: center;
+            @media only screen and (min-width : $bp){
+                text-align: right;
+                padding-right: 5px;
+            }
+        }
+        p{
+            font-size: 12px;
+            font-size: 1em;
+            padding-left: 60px;
+        }
+    }
+    .caja_slider {
+        margin: 0 auto;
+        width: 90%;
+        @media only screen and (min-width : $bp){
+            width: 40%;            
+        }
+    }
+    .rangeslider {
+        height: $altura;
+        border: 2px solid $color;
+        background-color: #fff;
+        border-radius: 50px;
+        position: relative;
+        margin-bottom: 2em;
+    }
+    .rangeslider__fill {
+        background-color: #edd2ac;
+        border-radius: 50px;
+        height: $altura - 4px;
+    }
+    .rangeslider__handle {
+        position: absolute;
+        width: $altura + 15px;
+        height: $altura + 15px;
+        background: #e4ac47;
+        top: -9px;
+        border-radius: 50px;
+        border: 9px solid $color;;
+       
+        .rangeslider__num {
+            position: relative;
+            top: -25px;
+            font-size: 13px;
+            font-weight: bolder;
+            color: $color;
+            text-align: center;
+        }
+    }
+
+    .resultado_slider {
+        margin-bottom: 2em;
+        ul {
+            text-align: center;
+            @media only screen and (min-width : $bp){
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+            }
+        }
+        li {
+            font-size: 30px;
+            position: relative;
+            @media only screen and (min-width : $bp){
+                &:first-child {
+                    margin-right: 2em;
+                }
+            }
+        }
+        span {
+            color: $color;
+            font-size: 50px;
+            margin-right: 3px;
+            font-weight: bold;
+        }
+    }
+    .selector_slider{
+        display: flex;
+        justify-content: center;
+        li{
+            position: relative;
+            float: left;
+            margin-right: 30px;
+        }
+
+        label{
+          display: block;
+          position: relative;
+          font-weight: 300;
+          font-size: 18px;
+          padding-left: 25px ;
+          z-index: 9;
+          cursor: pointer;
+          transition: all 0.25s linear;
+        }
+
+        .check{
+            display: block;
+            position: absolute;
+            border: 3px solid $color;
+            border-radius: 100%;
+            height: 20px;
+            width: 20px;
+            top: 0;
+            left: -6px;
+            z-index: 5;
+            transition: border .25s linear;
+            &::before {
+                display: block;
+                position: absolute;
+                content: '';
+                border-radius: 100%;
+                height: 12px;
+                width: 12px;
+                top: 1px;
+                left: 1px;
+                margin: auto;
+                transition: background 0.25s linear;
+            }
+
+        }
+        input[type=radio]{
+          position: absolute;
+          visibility: hidden;
+        }
+        input[type=radio]:checked ~ .check::before{
+          background: $color;
+        }
+
+    }
+}
