@@ -144,7 +144,7 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"] {
-  font-size: 16px; }
+  font-size: 19px; }
 
 input[type="text"] {
   font-size: inherit; }
@@ -3029,6 +3029,84 @@ input[type="text"] {
   @media only screen and (min-width: 800px) {
     .zona_slider .zona_callto .callto li {
       float: none; } }
+
+.formulario {
+  background-color: #dadada;
+  padding: 1em; }
+
+.row {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.box {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
+  position: relative;
+  margin-bottom: 12px; }
+
+.small-100 {
+  width: 100%; }
+
+.small-50 {
+  width: 49%; }
+
+.small-33 {
+  width: 32%; }
+
+.small-22 {
+  width: 23.5%; }
+
+@media only screen and (min-width: 800px) {
+  .medium-50 {
+    width: 49%; }
+  .medium-33 {
+    width: 32%; }
+  .medium-22 {
+    width: 23.5%; } }
+
+label {
+  font-size: 12px; }
+
+input {
+  width: 100%;
+  padding: 5px 0 5px 7px; }
+
+input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: grey; }
+
+input::-moz-placeholder {
+  font-size: 14px;
+  color: grey; }
+
+input:-ms-input-placeholder {
+  font-size: 14px;
+  color: grey; }
+
+input::placeholder {
+  font-size: 14px;
+  color: grey; }
+
+button {
+  font-size: 20px;
+  background: orange;
+  border: none;
+  padding: 0.5em 2em;
+  width: 100%;
+  color: white; }
 
 html {
   font-family: "PT Sans", sans-serif; }

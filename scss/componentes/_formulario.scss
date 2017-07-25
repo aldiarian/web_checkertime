@@ -1,0 +1,68 @@
+.formulario{
+	background-color: #dadada;
+	padding: 1em;
+}
+
+.row{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	// @media only screen and (min-width : $bp){
+	// 	flex-wrap:wrap;
+	// }
+}
+
+.box{
+	align-self:center;
+	position: relative;
+	margin-bottom: 12px;
+}
+
+.small-100{
+	width: 100%;
+}
+.small-50{
+		width: 49%;
+	}
+.small-33{
+	width: 32%;
+}
+.small-22{
+	width: 23.5%;
+}
+
+@media only screen and (min-width : $bp){
+	.medium-50{
+		width: 49%;
+	}
+	.medium-33{
+		width: 32%;
+	}
+	.medium-22{
+		width: 23.5%;
+	}
+}
+
+label{
+	font-size: 12px;
+}
+input{
+	width: 100%;
+	padding: 5px 0 5px 7px;
+
+}
+input::placeholder {
+	font-size: 14px;
+	color: grey;
+
+}
+button{
+	font-size: 20px;
+    background: orange;
+    border: none;
+    padding: 0.5em 2em;
+    width: 100%;
+    color: white;
+}
