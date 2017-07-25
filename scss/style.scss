@@ -126,6 +126,22 @@ a {
 
 }
 
+.zona_texto_generico{
+    max-width: 90%;
+    font-size: $tamafont2;
+    margin:2em auto;
+    h2{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    @media only screen and (min-width : $bp){
+     width: 800px;   
+        h2{
+            font-size: 45px;
+        }
+    }
+}
 
 .footer{
     background-color: $color1;

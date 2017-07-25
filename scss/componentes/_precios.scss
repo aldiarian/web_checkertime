@@ -170,4 +170,11 @@ $color: #cd880c;
         }
 
     }
+    .zona_callto{
+        @media only screen and (min-width : $bp){
+            .callto li{
+                float:none;
+            }
+        }
+    }
 }

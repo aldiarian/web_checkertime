@@ -3026,6 +3026,9 @@ input[type="text"] {
       visibility: hidden; }
     .zona_slider .selector_slider input[type=radio]:checked ~ .check::before {
       background: #cd880c; }
+  @media only screen and (min-width: 800px) {
+    .zona_slider .zona_callto .callto li {
+      float: none; } }
 
 html {
   font-family: "PT Sans", sans-serif; }
@@ -3122,6 +3125,20 @@ a {
     .zona_callto .callto li {
       width: auto;
       float: left; } }
+
+.zona_texto_generico {
+  max-width: 90%;
+  font-size: 19px;
+  margin: 2em auto; }
+  .zona_texto_generico h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1em; }
+  @media only screen and (min-width: 800px) {
+    .zona_texto_generico {
+      width: 800px; }
+      .zona_texto_generico h2 {
+        font-size: 45px; } }
 
 .footer {
   background-color: #155e8c; }
