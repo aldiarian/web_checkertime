@@ -3101,12 +3101,14 @@ input::placeholder {
   color: grey; }
 
 button {
-  font-size: 20px;
-  background: orange;
+  background: #f7e867;
   border: none;
-  padding: 0.5em 2em;
+  padding: 1em 2em;
   width: 100%;
-  color: white; }
+  color: black;
+  letter-spacing: 1.5px;
+  text-align: center;
+  font-size: 15px; }
 
 html {
   font-family: "PT Sans", sans-serif; }
@@ -3157,23 +3159,23 @@ a {
   margin: 1em 0; }
 
 .callto li {
-  border-radius: 4px;
-  float: left;
   letter-spacing: 1.5px;
   text-align: center;
+  font-size: 15px;
+  border-radius: 4px;
   transition: ease all .3s;
   position: relative;
-  font-size: 15px; }
+  float: left; }
   .callto li:hover {
     background-color: white;
     color: black;
     border: 2px solid black; }
 
 .callto .contratar {
-  border: 2px solid #ffd858;
+  border: 2px solid #f7e867;
   margin-right: 1em;
   padding: 15px 5%;
-  background-color: #ffd858;
+  background-color: #f7e867;
   width: 60%; }
   @media only screen and (min-width: 800px) {
     .callto .contratar {
