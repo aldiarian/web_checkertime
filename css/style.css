@@ -3030,11 +3030,12 @@ input[type="text"] {
     .zona_slider .zona_callto .callto li {
       float: none; } }
 
-.formulario {
+.zona_formulario .formulario {
   background-color: #dadada;
-  padding: 1em; }
+  padding: 1em;
+  margin-bottom: 1em; }
 
-.row {
+.zona_formulario .row {
   width: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3049,7 +3050,7 @@ input[type="text"] {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
 
-.box {
+.zona_formulario .box {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
               -ms-grid-row-align: center;
@@ -3057,58 +3058,63 @@ input[type="text"] {
   position: relative;
   margin-bottom: 12px; }
 
-.small-100 {
+.zona_formulario .small-100 {
   width: 100%; }
 
-.small-50 {
+.zona_formulario .small-50 {
   width: 49%; }
 
-.small-33 {
+.zona_formulario .small-33 {
   width: 32%; }
 
-.small-22 {
+.zona_formulario .small-22 {
   width: 23.5%; }
 
 @media only screen and (min-width: 800px) {
-  .medium-50 {
+  .zona_formulario .medium-50 {
     width: 49%; }
-  .medium-33 {
+  .zona_formulario .medium-33 {
     width: 32%; }
-  .medium-22 {
+  .zona_formulario .medium-22 {
     width: 23.5%; } }
 
-label {
+.zona_formulario label {
   font-size: 12px; }
 
-input {
+.zona_formulario input {
   width: 100%;
   padding: 5px 0 5px 7px; }
 
-input::-webkit-input-placeholder {
+.zona_formulario input::-webkit-input-placeholder {
   font-size: 14px;
   color: grey; }
 
-input::-moz-placeholder {
+.zona_formulario input::-moz-placeholder {
   font-size: 14px;
   color: grey; }
 
-input:-ms-input-placeholder {
+.zona_formulario input:-ms-input-placeholder {
   font-size: 14px;
   color: grey; }
 
-input::placeholder {
+.zona_formulario input::placeholder {
   font-size: 14px;
   color: grey; }
 
-button {
+.zona_formulario button {
+  border-radius: 4px;
   background: #f7e867;
-  border: none;
+  border: 2px solid #f7e867;
   padding: 1em 2em;
   width: 100%;
   color: black;
   letter-spacing: 1.5px;
   text-align: center;
   font-size: 15px; }
+  .zona_formulario button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black; }
 
 html {
   font-family: "PT Sans", sans-serif; }
