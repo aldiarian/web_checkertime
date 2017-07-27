@@ -6,6 +6,8 @@ $color: #cd880c;
     justify-content: center;
     text-align: center;
     margin:1em 10px;
+    margin-top: 0;
+    padding-top: 80px;
     h2{
         font-size: 40px;
     }
@@ -14,6 +16,8 @@ $color: #cd880c;
     }
     @media only screen and (min-width : $bp){
         margin:5em 0;
+        margin-top: 0;
+        padding-top: 100px;
         h2{
             font-size: 60px;
         }

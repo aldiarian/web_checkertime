@@ -1,9 +1,11 @@
 .zona_uno {
-    height: 460px;
-    @media only screen and (min-width: $bp) {
-        height: 380px;
-    }
+    height: 540px;
+    padding-top: 62px;
     background: linear-gradient(to bottom, rgba(116, 174, 213, 1) 0%, rgba(116, 174, 213, 1) 1%, rgba(35, 86, 140, 1) 100%);
+    @media only screen and (min-width: $bp) {
+        height: 450px;
+        padding-top: 78px;
+    }
     .contenedor {
         display: flex;
         justify-content: center;
@@ -232,5 +234,7 @@
         }
     }
 }
+
+    
 
 @import '_precios.scss';

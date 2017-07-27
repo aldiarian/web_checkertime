@@ -2560,7 +2560,9 @@ input[type="text"] {
   height: 60px;
   display: block;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  position: fixed;
+  z-index: 999; }
   .menu-pricipal .logo-checkertime {
     position: absolute;
     top: 10%;
@@ -2616,7 +2618,7 @@ input[type="text"] {
   transition: all .4s ease;
   overflow: hidden;
   background-color: #1a5880;
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 99;
   box-shadow: 0px 7px 14px -3px rgba(0, 0, 0, 0.75); }
@@ -2635,11 +2637,13 @@ input[type="text"] {
       display: none; } }
 
 .zona_uno {
-  height: 460px;
+  height: 540px;
+  padding-top: 62px;
   background: linear-gradient(to bottom, #74aed5 0%, #74aed5 1%, #23568c 100%); }
   @media only screen and (min-width: 800px) {
     .zona_uno {
-      height: 380px; } }
+      height: 450px;
+      padding-top: 78px; } }
   .zona_uno .contenedor {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2884,14 +2888,18 @@ input[type="text"] {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  margin: 1em 10px; }
+  margin: 1em 10px;
+  margin-top: 0;
+  padding-top: 80px; }
   .zona_texto h2 {
     font-size: 40px; }
   .zona_texto p {
     font-size: 20px; }
   @media only screen and (min-width: 800px) {
     .zona_texto {
-      margin: 5em 0; }
+      margin: 5em 0;
+      margin-top: 0;
+      padding-top: 100px; }
       .zona_texto h2 {
         font-size: 60px; }
       .zona_texto p {
@@ -3215,7 +3223,10 @@ a {
 .zona_texto_generico {
   max-width: 90%;
   font-size: 19px;
-  margin: 2em auto; }
+  margin: 2em auto;
+  margin: 2em auto;
+  margin-top: 0;
+  padding-top: 100px; }
   .zona_texto_generico h2 {
     font-size: 30px;
     text-align: center;
