@@ -2,17 +2,36 @@ var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
+var pug = require('gulp-pug');
 
+
+gulp.task('pug', function () {
+   gulp.src('./dev/*.pug')
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(gulp.dest('./dist/'));
+});
+
+gulp.task('copiCarpet', function () {
+    gulp.src(['./fonts/**/*'])
+    .pipe(gulp.dest('./dist/fonts/'));
+    gulp.src(['./img/**/*'])
+    .pipe(gulp.dest('./dist/img/'));
+    gulp.src(['./js/**/*'])
+    .pipe(gulp.dest('./dist/js/'));
+})
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass' ], function() {
+gulp.task('serve', ['sass', 'copiCarpet'], function() {
 
     browserSync.init({
-        server: "./"
+        server: "./dist/"
     });
 
     gulp.watch("scss/**/*.scss", ['sass']);
-    gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch("./dist/*.html").on('change', browserSync.reload);
+    gulp.watch("./dev/**/*.pug" , ['pug'])
 
 });
 
@@ -25,7 +44,7 @@ gulp.task('sass', function() {
             browsers: ['last 5 versions'],
             cascade: true
         }))
-        .pipe(gulp.dest("css"))
+        .pipe(gulp.dest("dist/css"))
         .pipe(browserSync.stream());
 });
 
