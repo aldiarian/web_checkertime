@@ -6,10 +6,8 @@ var pug = require('gulp-pug');
 
 
 gulp.task('pug', function () {
-   gulp.src('./dev/*.pug')
-        .pipe(pug({
-            pretty: true
-        }))
+   gulp.src('./dev/**/*.pug')
+        .pipe(pug())
         .pipe(gulp.dest('./dist/'));
 });
 
